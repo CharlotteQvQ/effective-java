@@ -7,11 +7,11 @@ package com.charlotte.chapter002;
  * @version:1.0
  */
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         /*当设计类的构造方法或静态工厂的参数超过几个时，Builder 模式是一个不错的选择，
         特别是如果许 多参数是可选的或相同类型的。客户端代码比使用伸缩构造方法(telescoping constructors)更容易读写，
         并且 builder 比 JavaBeans 更安全。*/
-        Production production = new Production.Builder("Car",999999).type("SAIC").build();
+        Production production = new Production.Builder("Car", 999999).type("SAIC").build();
         System.out.println(production.toString());
 
         /*Builder 模式非常适合类层次结构。
